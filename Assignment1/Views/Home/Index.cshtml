@@ -1,0 +1,36 @@
+﻿<!-- Written by Jonathan Carlton
+// 1/22/2019 -->
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Bullseye Retailer Index</h2>
+
+<b>This is the data from the Supplier List</b></br />
+@foreach (var p in ViewBag.SupplierList)
+{
+    @Html.Raw(p.ToString());
+    <br /> <br />
+}
+
+<b>This is the Full Address Method from the Supplier List</b></br />
+@foreach (var p in ViewBag.SupplierList)
+{
+    @Html.Raw(p.FullAddress());
+    <br /> <br />
+}
+
+<b>This is the data from the Category List</b></br />
+@foreach (var p in ViewBag.CategoryList)
+{
+    @Html.Raw(p.ToString());
+    <br /> <br />
+}
+
+<b>This is the data from the Product List</b></br />
+@foreach (var p in ViewBag.ProductList)
+{
+    @Html.Raw(p.ToString());
+    <br /> <br />
+}
+
